@@ -1,2 +1,19 @@
 # HDGICN
-Recent large-scale cancer research projects have generated valuable multi-omics data, driving the development of computational methods for identifying cancer driver genes. The purpose of this study is to efficiently identify cancer driver genes using these multi-omics data to support precision therapy and biomarker discovery. We propose a novel heterophilic graph convolutional network model based on deep graph information maximization (HDGICN) for efficient identification of cancer driver genes. HDGICN integrates graph information maximization and the Personalized PageRank algorithm, and utilizes hierarchical graph convolution and dual residual structures to learn gene features on heterophilic biological molecular networks. The experimental results demonstrated that on three heterophilic molecular networks, HDGICN achieved Area Under the Receiver Operating Characteristic (AUROC) values of 0.8421, 0.8427, and 0.8418, and Area Under the Precision-Recall Curve (AUPRC) values of 0.7936, 0.8405, and 0.8115, respectively. These results surpassed those of other methods and effectively predicted novel cancer driver genes. HDGICN efficiently identifies cancer driver genes using multi-omics data and provides significant assistance for precision therapy and biomarker discovery. The application of this method on heterophilic molecular networks has practical value.
+## Install dependent Python packages
+pip install -r requirements.txt
+or
+pip install torch==2.0.0+cu118
+pip install torch-cluster==1.6.1+pt20cu118
+pip install torch-geometric==1.7.2
+pip install torch-scatter==2.1.1+pt20cu118
+pip install torch-sparse==0.6.17+pt20cu118
+pip install torch-spline-conv==1.2.2+pt20cu118
+pip install torchaudio==2.0.1+cu118
+pip install torchvision==0.15.1+cu118
+pip install scikit-learn==1.2.2
+pip install pandas==1.2.4
+pip install numpy==1.21.5
+
+## Model Execution
+example
+python main.py
